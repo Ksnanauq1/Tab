@@ -59,82 +59,62 @@ int points2 = Legia.CalculatePoints();
 
 }
 
-
-//public
+// public
 class First {
-public static void main(String[] args)
-{
-new First();
-}
-public First()
-{
-Mathes Piast = new Mathes(12,4,3);
-int points1 = Piast.CalculatePoints();
+	public static void main(String[] args) {
+		new First();
+	}
 
-System.out.println("Iloœæ punktów: " +
-'\n' + Piast.EnterWon()+ " , "+
-Piast.EnterLost() + " , " +
-Piast.EnterDrawn() + '\n' + "wynosi: " + '\n' +
-points1);
-}
+	public First() {
+		Mathes Piast = new Mathes(12, 4, 3);
+		int points1 = Piast.CalculatePoints();
+
+		System.out.println("Iloœæ punktów: " + '\n' + Piast.EnterWon() + " , " + Piast.EnterLost() + " , "
+				+ Piast.EnterDrawn() + '\n' + "wynosi: " + '\n' + points1);
+	}
 }
 
-//public
+// public
 class Second {
-public static void main(String[] args)
-{
-new Second();
+	public static void main(String[] args) {
+		new Second();
+	}
+
+	public Second() {
+		Mathes Legia = new Mathes(12, 4, 3);
+		int points1 = Legia.CalculatePoints();
+
+		System.out.println("Iloœæ punktów: " + '\n' + Legia.EnterWon() + " , " + Legia.EnterLost() + " , "
+				+ Legia.EnterDrawn() + '\n' + "wynosi: " + '\n' + points1);
+	}
 }
-public Second()
-{
-Mathes Legia = new Mathes(12,4,3);
-int points1 = Legia.CalculatePoints();
 
-System.out.println("Iloœæ punktów: " +
-'\n' + Legia.EnterWon()+ " , "+
-Legia.EnterLost() + " , " +
-Legia.EnterDrawn() + '\n' + "wynosi: " + '\n' +
-points1);
-}
-} 
+// Trzeci
 
-//Trzeci
-
-//public
+// public
 class Third {
-public static void main(String[] args)
-{
-new Third();
-}
-public Third()
-{
-Mathes ref1, ref2, ref3;
-// utworzenie dwóch obiektów klasy Mathes
-ref1 = new Mathes(1, 0, 0);
-ref2 = new Mathes(0, 1, 0);
-ref3 = ref1;
+	public static void main(String[] args) {
+		new Third();
+	}
 
-System.out.println("Iloœæ punktów dru¿yny Piast: " +
-ref3.EnterWon()+ " , "+
-ref3.EnterLost() + " , " +
-ref3.EnterDrawn() + '\n' + "wynosi: " +
-ref3.CalculatePoints());
-ref3 = ref2;
+	public Third() {
+		Mathes ref1, ref2, ref3;
+		// utworzenie dwóch obiektów klasy Mathes
+		ref1 = new Mathes(1, 0, 0);
+		ref2 = new Mathes(0, 1, 0);
+		ref3 = ref1;
 
-System.out.println("Iloœæ punktów dru¿yny Legia: " +
-ref3.EnterWon()+ " , "+
-ref3.EnterLost() + " , " +
-ref3.EnterDrawn() + '\n' + "wynosi: " +
-ref3.CalculatePoints());
-}
+		System.out.println("Iloœæ punktów dru¿yny Piast: " + ref3.EnterWon() + " , " + ref3.EnterLost() + " , "
+				+ ref3.EnterDrawn() + '\n' + "wynosi: " + ref3.CalculatePoints());
+		ref3 = ref2;
+
+		System.out.println("Iloœæ punktów dru¿yny Legia: " + ref3.EnterWon() + " , " + ref3.EnterLost() + " , "
+				+ ref3.EnterDrawn() + '\n' + "wynosi: " + ref3.CalculatePoints());
+	}
 }
 
+// Koniec 3
 
-//Koniec 3
-
-
-
-//doda³em nawias poni¿ej, bo wywala³o b³¹d
+// doda³em nawias poni¿ej, bo wywala³o b³¹d
 
 }
-
